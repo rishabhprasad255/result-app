@@ -1,0 +1,259 @@
+.vmain-div {
+  min-height: 85vh;
+  min-width: 90vw;
+  position: relative;
+}
+.outer-div {
+  background-image: url("https://images.unsplash.com/photo-1579197806876-e6e8ce4faf96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1736&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 85vh;
+  min-width: 90vw;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+.inner-div {
+  background-color: rgba(255, 246, 246, 0.95);
+  width: 80vw;
+  height: 40vh;
+  padding: 1em;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.form-div {
+  position: absolute;
+  right: 120px;
+  background-color: rgba(255, 246, 246, 0.99);
+  width: 50vw;
+  height: 60vh;
+  padding: 1.2em !important;
+  box-shadow: 2px 2px 8px grey;
+  border-radius: 10px;
+}
+.dev-link {
+  width: 30%;
+  flex: 0.5 !important;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px solid rgb(226, 222, 222);
+  background-color: rgb(255, 102, 42);
+  padding: 5px;
+  border-radius: 10px;
+}
+.alert-msg {
+  text-align: center;
+  background-color: whitesmoke;
+  color: crimson;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 4px;
+  margin: 0;
+}
+.dev-btn {
+  padding: 8px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(191, 218, 241);
+  cursor: pointer;
+  text-decoration: none;
+}
+.dev-btn:hover {
+  background-color: rgb(152, 207, 255);
+
+  box-shadow: 1px 1px 5px grey;
+}
+.dev-btn:active {
+  display: inline-block;
+  transform: scale(0.95);
+}
+.info {
+  flex: 0.5 !important;
+  text-align: center;
+  width: 30%;
+}
+.info p {
+  margin-top: 38px;
+  font-size: 1.4rem;
+  font-family: "Pacifico", cursive;
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.form-div > p {
+  font-size: 1.7rem;
+  font-family: "Pacifico", cursive;
+  margin: 10px;
+}
+.form-div label {
+  font-weight: bolder;
+  text-align: center;
+}
+.selectme {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 6px;
+  font-size: 1.1rem;
+
+  padding: 2%;
+  border: none;
+  background-color: white;
+  color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.semesters {
+  height: 5em;
+  display: none;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: chocolate;
+}
+::-webkit-scrollbar-track {
+  background-color: blueviolet;
+}
+.semesters main {
+  background-color: whitesmoke;
+  padding: 4px;
+}
+.semesters main:hover {
+  background-color: rgb(0, 162, 255);
+}
+.semesters-click {
+  display: block;
+  position: absolute;
+  top: 0%;
+  right: -40%;
+
+  width: 170%;
+}
+
+form {
+  background-color: rgb(235, 196, 196);
+  padding: 3%;
+  border-radius: 10px;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form-footer {
+  flex: 0.4;
+  display: flex;
+  min-width: 160px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-footer input {
+  font-size: 15px;
+  width: 100%;
+  height: 37px;
+  padding: 3%;
+  border: none;
+  border-radius: 6px;
+}
+.form-footer button {
+  padding: 3%;
+  width: 100%;
+  height: 37px;
+  border: none;
+  border-radius: 6px;
+  color: brown;
+  background-color: rgb(219, 130, 66);
+}
+.form-footer button:hover {
+  background-color: burlywood;
+}
+.form-footer button:active {
+  transform: scale(0.95);
+}
+.selectme-div {
+  position: relative;
+  cursor: pointer;
+}
+@media (min-width: 750px) {
+  form {
+    flex: 0.9;
+    height: 60%;
+    width: 80%;
+  }
+  .form-div {
+    flex: 1;
+  }
+
+  .form-footer {
+    flex: 0.7;
+    width: 40%;
+    padding: 12px;
+  }
+
+  .form-footer button {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 750px) {
+  .inner-div {
+    display: none;
+  }
+  form {
+    flex: 0.9;
+  }
+  .form-div label {
+    font-size: 0.9rem;
+  }
+  .form-div {
+    position: relative;
+
+    right: 0px;
+
+    width: 70vw;
+    height: 75vh;
+    padding: 1em;
+  }
+  .form-footer {
+    flex: 0.7;
+    padding: 5px;
+  }
+  .form-footer input {
+    height: 24%;
+  }
+  .form-footer button {
+    height: 24%;
+    font-size: 1.1rem;
+  }
+  .semesters-click {
+    width: 150px;
+    top: 0%;
+    right: -10%;
+  }
+
+  .form-div > p {
+    font-size: 1rem;
+    font-family: "Pacifico", cursive;
+  }
+}
