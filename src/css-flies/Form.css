@@ -149,7 +149,7 @@
   position: absolute;
   top: 0%;
   right: -40%;
-
+  min-width: 170px;
   width: 170%;
 }
 
@@ -250,9 +250,9 @@ form {
     font-size: 1.1rem;
   }
   .semesters-click {
-    width: 150px;
+    width: 170px;
     top: 0%;
-    right: -10%;
+    right: -16%;
   }
 
   .form-div > p {
