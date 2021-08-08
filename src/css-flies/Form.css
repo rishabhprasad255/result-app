@@ -198,6 +198,7 @@ form {
 .selectme-div {
   position: relative;
   cursor: pointer;
+  width: 130px;
 }
 @media (min-width: 750px) {
   form {
@@ -252,11 +253,15 @@ form {
   .semesters-click {
     width: 170px;
     top: 0%;
-    right: -15%;
+    right: -35%;
   }
 
   .form-div > p {
     font-size: 1rem;
     font-family: "Pacifico", cursive;
+  }
+
+  .selectme-div {
+    width: 100px;
   }
 }
